@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.font-display{
+    font-family: 'Kanit', sans-serif;
+}
+.font-sans{
+    font-family: 'Metrophobic', sans-serif;
+}
+.main{
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      
+        li {
+          display: inline;
+          position: relative;
+          text-align: center;
+          z-index: 1;
+            &:hover{
+            cursor: pointer;
+          }
+        }
+      }
+      
+      img {
+        position: absolute;
+        width: 900px;
+        height: 400px;
+        object-fit: cover;
+        transform: translateX(-50%) translateY(-50%);
+        transition: all 0.3s ease;
+        z-index: -10;
+        opacity: 0;
+        visibily: hidden;
+        pointer-events: none;
+        max-width: fit-content;
+      }
+}
+.section-4{
+    cursor: url("/play-cursor.svg"), auto !important;
+        transition: cursor 0.5s ease;
+        &:hover{
+            cursor: url("/play-cursor.svg"), auto !important;
+            transition: cursor 0.5s ease;
+        }
+}
